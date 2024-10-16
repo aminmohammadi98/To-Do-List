@@ -1,3 +1,19 @@
 .toDOList {
   text-decoration: line-through;
 }
+.card {
+  width: 660px;
+  height: 780px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__header {
+  padding: 20px;
+  /* width: 100%; */
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  background-color: dodgerblue;
+}

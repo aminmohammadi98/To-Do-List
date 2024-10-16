@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="body">
     <div class="main">
-      <div class="main__card">
-        <div class="main__card_header"><h1>2:26 pm</h1></div>
-        <div class="main__card_body">
+      <div class="card main__card">
+        <div class="card__header">
+          <h1>2:26 pm</h1>
+          <button>+</button>
+        </div>
+        <div class="card__body">
           <ul>
             <li>Go shopping <input type="checkbox" id="toDoList_1" /></li>
             <li>write an essay <input type="checkbox" id="toDoList_2" /></li>
           </ul>
         </div>
-        <div class="main__card_footer"></div>
+        <div class="card__footer"></div>
       </div>
     </div>
     <script src="main.js"></script>
