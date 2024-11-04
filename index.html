@@ -11,12 +11,19 @@
       <div class="card main__card">
         <div class="card__header">
           <h1>2:26 pm</h1>
-          <button>+</button>
+          <button class="card_add_btn">+</button>
         </div>
         <div class="card__body">
-          <ul>
-            <li>Go shopping <input type="checkbox" id="toDoList_1" /></li>
-            <li>write an essay <input type="checkbox" id="toDoList_2" /></li>
+          <ul class="card__list list">
+            <li class="list__item">
+              <input class="list_item_input" value="Go shopping " />
+              <input type="checkbox" id="toDoList_1" />
+              <button class="list__rm_btn">×</button>
+            </li>
+            <li class="list__item">
+              write an essay <input type="checkbox" id="toDoList_2" />
+              <button class="list__rm_btn">×</button>
+            </li>
           </ul>
         </div>
         <div class="card__footer"></div>
