@@ -3,39 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To do list</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body class="body">
-    <div class="main">
-      <div class="card main__card">
-        <div class="card__header">
-          <h1>2:26 pm</h1>
-          <button class="card_add_btn" id="card_add_btn">+</button>
-        </div>
-        <div class="card__body">
-          <ul class="card__list list">
-            <li class="list__item">
-              <input class="list_item_input" value="Go shopping " />
-              <input type="checkbox" id="toDoList_1" />
-              <button class="list__rm_btn">×</button>
-            </li>
-            <li class="list__item">
-              write an essay <input type="checkbox" id="toDoList_2" />
-              <button class="list__rm_btn">×</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card__footer"></div>
+  <body>
+    <div class="container">
+      <div class="todo-header">
+        <h2>ToDo List</h2>
+        <img src="notebook.png" height="50px" />
       </div>
-      <template id="itemTemplate">
-        <li class="list__item">
-          <input class="list_item_input" value="Go shopping " />
-          <input type="checkbox" id="toDoList_1" />
-          <button class="list__rm_btn">×</button>
-        </li>
-      </template>
+      <div class="todo-body">
+        <input
+          type="text"
+          id="todoText"
+          class="todo-input"
+          placeholder="Add your items"
+        />
+        <img
+          src="plus.png"
+          alt="+"
+          id="AddUpdateClick"
+          onclick="CreateToDoItems();"
+        />
+      </div>
+      <h5 id="Alert"></h5>
+      <ul id="list-items" class="list-items"></ul>
     </div>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
